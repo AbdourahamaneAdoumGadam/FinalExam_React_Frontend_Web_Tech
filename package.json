@@ -19,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -51,5 +53,8 @@
   "bugs": {
     "url": "https://github.com/AbdourahamaneAdoumGadam/FinalExam_React_Frontend_Web_Tech/issues"
   },
-  "homepage": "https://github.com/AbdourahamaneAdoumGadam/FinalExam_React_Frontend_Web_Tech#readme"
+  "homepage": "https://github.com/AbdourahamaneAdoumGadam/FinalExam_React_Frontend_Web_Tech#readme",
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  }
 }
