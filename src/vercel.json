@@ -1,15 +1,14 @@
 {
-  "version": 2,
-  "builds": [
+  "routes": [
     {
-      "src": "backend/*.jar",
-      "use": "@vercel/java"
+      "src": "/",
+      "dest": "/"
     }
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/backend/$1"
+      "src": "test",
+      "dest": "/"
     }
   ]
 }
